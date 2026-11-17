@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #faeecf;
+    color: #4e401a;
+}
+
+header{
+    background-color: #f5e3b1;
+    color: #4e401a;
+    text-align: center;
+    padding: 30px;
+}
+
+main{
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 15px;
+}
+
+a{
+    color: #1f190a;
+    background-color: #f5e3b1;
+    padding: 5px;
+    border-radius: 12px;
+    box-shadow: 0 3px #1f190a;
+    border-top:  5px solid #d1ae56;
+}
+
+main h2{
+    color: #806a30;
+    margin-bottom: 10px;
+}
+#data-hoje{
+    margin-bottom: 20px;
+}
+
+.cardapio{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, ifr));
+    gap: 10px;
+}
+
+.card{
+    background-color: #f5e3b1;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px #1f190a;
+    border-top:  5px solid #d1ae56;
+}
+
+.card.hoje{
+    border: 3px solid #d1ae56;
+    background-color: #ecdcb2;
+}
+
+.card h3{
+    color: #d1ae56;
+    margin-bottom: 15px;
+}
+
+.card p{
+    margin: 8px 0;
+}
+
+.votacoo{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+button{
+    flex: 1;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.positivo{
+    background-color: #d1ecb2;
+}
+.negativo{
+    background-color: #ffe5e0;
+}
+button:hover{
+    opacity: 0.75;
+}
+@media (max-width: 500px) {
+    header h1{
+        font-size: 25px;
+    }
+    main{
+        margin: 15px auto;
+    }
+}
